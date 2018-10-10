@@ -1,5 +1,5 @@
 # serConvert
-MATLAB utility to convert *.ser files to images with optional scalebar.
+MATLAB utility to convert `*.ser` files to images with optional scalebar. Uses `serReader()` from Peter Ercius to read in files.
 
 ## Usage
 `img = serConvert(...)`
