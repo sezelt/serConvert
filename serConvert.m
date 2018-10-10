@@ -45,7 +45,9 @@ if min(ser.image(:)) < 0
     ser.image = ser.image - min(ser.image(:));
 end
 img = (ser.image.^options.power);
-pixsz = ser.pixelSizeX; %only use x scale. if they're different, good luck
+pixsz = ser.pixelSizeY; %only use x scale. if they're different, good luck
+%flip image around
+img = rot90(img);
 imSize = size(img);
 
 % normalize the image to [0 1]
